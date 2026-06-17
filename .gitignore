@@ -1,0 +1,13 @@
+.env
+*.egg-info/
+__pycache__
+.venv/
+.pytest_cache/
+.agent.egg-info/
+ROADMAP.md
+README.md
+notebooks/
+
+mlartifacts/
+mlflow.db
+graph.png
