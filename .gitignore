@@ -3,7 +3,7 @@
 __pycache__
 .venv/
 .pytest_cache/
-.agent.egg-info/
+agent.egg-info/
 ROADMAP.md
 README.md
 notebooks/
@@ -11,3 +11,5 @@ notebooks/
 mlartifacts/
 mlflow.db
 graph.png
+
+blog/
