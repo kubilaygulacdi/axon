@@ -30,3 +30,6 @@ axon = "agent.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+agent = ["prompts/*.md"]

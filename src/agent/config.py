@@ -17,6 +17,7 @@ class Config(BaseSettings):
         default="openai", alias="LLM_PROVIDER"
     )
     llm_model: str = Field(default="gpt-4o-mini", alias="LLM_MODEL")
+    llm_explore_model: str | None = Field(default=None, alias="LLM_EXPLORE_MODEL")
     llm_temperature: float = Field(
         default=0.0, alias="LLM_TEMPERATURE", ge=0.0, le=2.0
     )
