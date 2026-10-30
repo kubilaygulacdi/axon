@@ -65,3 +65,17 @@ Adding an ordinary tool: define it with `@tool` in `tools/`, then add it to the 
 Tools (`tools/`): `list_dir`, `read_file`, `glob`, `grep`, `edit_file`, `write_file` (`file_tools.py`), `web_search` (`research_tools.py`, DuckDuckGo via `ddgs`), `write_todos`/`read_todos` (`todo_tools.py`, `InjectedState`), `task` (`task_tool.py`).
 
 Tests live in `tests/test_graph.py` and drive the graph with a scripted `BaseChatModel` (`ScriptedChat`) — a `respond(messages, tools_bound)` callable, so parallel subagents can share one model deterministically. Nothing hits a provider.
+
+## Agent skills
+
+### Issue tracker
+
+Issues are tracked in GitHub Issues (`kubilaygulacdi/axon`) via the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `CONTEXT.md` + `docs/adr/` at the repo root. See `docs/agents/domain.md`.
